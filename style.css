@@ -15,3 +15,11 @@
 section {
     padding-top: 5rem;
 }
+
+.gallery-img {
+    width: 100%;
+}
+
+#gallery .row > * {
+    padding: 0;
+}
