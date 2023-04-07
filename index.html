@@ -21,7 +21,7 @@
   </head>
   <body id="home">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark shadow-lg fixed-top" style="background-color: royalblue">
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-lg fixed-top" style="background-color: navy">
       <div class="container">
         <a class="navbar-brand" href="https://instagram.com/mrakaf_">M. Raka F</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -138,6 +138,40 @@
           </div>
         </div>
       </div>
+
+      <section id="#my-interest">
+        <div class="container">
+          <div class="row text-center mb-3">
+            <div class="col">
+              <h2>My Interest</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="interest-box">
+                <h4 class="interest-name" style="color: white;">Gaming Room</h4>
+                <img src="img/interest/gaming.jpg" alt="gaming room" class="interest-img">
+                <a href="#" class="btn btn-primary interest-detail-button">Show Details</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="interest-box">
+                <h4 class="interest-name" style="color: white;">Sunsetz</h4>
+                <img src="img/interest/sunsetz.jpg" alt="gaming room" class="interest-img">
+                <a href="#" class="btn btn-primary interest-detail-button">Show Details</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="interest-box">
+                <h4 class="interest-name" style="color: white;">Nature</h4>
+                <img src="img/interest/nature.jpg" alt="nature" class="interest-img">
+                <a href="#" class="btn btn-primary interest-detail-button">Show Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffffff"
@@ -254,7 +288,7 @@
     <!-- Akhir Contact -->
     
     <!-- Footer -->
-    <footer class="text-white text-center pb-3" style="background-color:royalblue">
+    <footer class="text-white text-center pb-3" style="background-color:navy">
       <p class="memek">Created with <i class="bi bi-heart-fill text-danger"></i> by <a href="https://www.instagram.com/mrakaf_/" class="text-white fw-bold memek">M. Raka F</a></p>
     </footer>
     <!--  Akhir Footer -->
@@ -318,6 +352,18 @@
       .catch(error => console.error('Error!', error.message))
   });
 </script>
+
+<script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
+<script type="text/javascript">
+	VanillaTilt.init(document.querySelectorAll('.interest-box'), {
+		max: 35,
+		speed: 600,
+    glare: true,
+	});
+	
+
+</script>
+
   </body>
 </html>
 

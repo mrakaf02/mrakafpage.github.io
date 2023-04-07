@@ -23,3 +23,94 @@ section {
 #gallery .row > * {
     padding: 0;
 }
+
+/* My Interest Section */
+.interest-box {
+    position: relative;
+    background-color: navy;
+    border-radius: 10px;
+    height: 500px;
+    transform-style: preserve-3d;
+}
+
+.interest-box::before {
+    content: 'MY';
+    position: absolute;
+    color: #fff;
+    font-size: 6em;
+    font-weight: bold;
+    font-style: italic;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%,0);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.interest-box:hover::before {
+    opacity: 0.2;
+}
+
+.interest-box::after {
+    content: 'INTEREST';
+    position: absolute;
+    color: #fff;
+    font-size: 4.2em;
+    font-weight: bold;
+    font-style: italic;
+    top: 350px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.interest-box:hover::after {
+    opacity: 0.2;
+    transition: 0.5s;
+}
+
+.interest-name {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    font-size: 2em;
+    opacity: 0;
+    transform: translate3d(0,0,50px);
+    transition: 0.5s;
+}
+
+.interest-box:hover .interest-name {
+    top: 10px;
+    opacity: 1;
+}
+
+.interest-detail-button {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate3d(-50%,0, 100px);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.interest-box:hover .interest-detail-button {
+    opacity: 1;
+    bottom: 20px;
+}
+
+.interest-img {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate3d(-50%, 50%, 80px);
+    max-width: 200px;
+    transition: 0.8s
+}
+
+.interest-box:hover .interest-img {
+    transform: translate3d(-50%, 60%, 100px) rotate(-16deg) scale(1.8);
+}
+
